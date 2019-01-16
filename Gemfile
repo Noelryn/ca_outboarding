@@ -24,6 +24,8 @@ gem "aws-sdk-s3", require: false
 gem 'stripe-rails'
 gem 'high_voltage', '~> 3.1'
 gem 'cookies_eu'
+gem 'rails_admin', '~> 1.3'
+
 
 group :development, :test do
   gem 'coveralls', require: false
