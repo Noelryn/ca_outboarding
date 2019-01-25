@@ -5,7 +5,7 @@ Feature: Member profile has tech stack information
   In order to make my profile easier to find for Recruiters
   I would like to display my tech skills with proficiency levels
 
-  Background: 
+  Background:
 
   Given the following user exists
       | email              | first_name | last_name | role   |
