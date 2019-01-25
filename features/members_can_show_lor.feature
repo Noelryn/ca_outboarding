@@ -15,6 +15,9 @@ Feature: Coach can create a letter of reccomendation
 
     And coach "coach_1@craft.com" is logged in
 
-    Scenario: Coach can create a letter of reccomendation
+    Scenario: Coach can create a letter of recommendation
     When I am on the 'member' page
+    And I click on 'Student One'
+    And I click on the 'letter of recommendation' 
+    
 
