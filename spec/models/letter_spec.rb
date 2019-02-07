@@ -6,9 +6,6 @@ RSpec.describe Letter, type: :model do
     it { is_expected.to have_db_column :content}
   end
 
-  # describe 'associations' do
-  #   it { is_expected.to belong_to :user}
-  # end
 
   describe 'Validations' do
     it { is_expected.to validate_presence_of :title }

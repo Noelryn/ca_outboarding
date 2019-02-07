@@ -31,7 +31,6 @@ RSpec.describe User, type: :model do
     describe 'associations' do
       it { is_expected.to have_many :resources }
       it { is_expected.to have_many :skills }
-      # it { is_expected.to has_one :letter }
     end
     
   end

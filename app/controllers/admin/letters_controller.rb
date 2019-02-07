@@ -9,8 +9,7 @@ class Admin::LettersController < ApplicationController
   def create
     @member = user.find(params[:user_id])
     @member.letters.create(params.require(:letter).permit(:title, :content))
-    redirect_to admin_root_path
+    redirect_to admin_path
   end
 
-  
 end
