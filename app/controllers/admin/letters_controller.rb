@@ -4,12 +4,22 @@ class Admin::LettersController < ApplicationController
   end
 
   def new
+    @letter = Letter.new
   end
 
   def create
-    @member = user.find(params[:user_id])
-    @member.letters.create(params.require(:letter).permit(:title, :content))
-    redirect_to admin_path
+    @member = User.find(params[:user_id])
+    @member.letter.create(params.require(:letter).permit(:title, :content))
+
+    if @letter.save
+      redirect_to admin_letters_path
+    else
+      render 'new'
+    end
   end
+
+  # def show 
+  #   @letter = Letter.find(params[:user_id])
+  # end
 
 end

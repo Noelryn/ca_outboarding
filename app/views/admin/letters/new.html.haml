@@ -1,11 +1,11 @@
-%h1 Admin::Letters#new
-%p Find me in app/views/admin/letters/new.html.haml
+-# %h1 Write A letter of recommendation
+-# %p Find me in app/views/admin/letters/new.html.haml
 
-= form_with url: new_admin_letter_path, scope: :letter, local: true do |form|
+= form_with scope: :letter, url:  new_admin_letter_path, local: true do |form|
 	%div
-		= form.label :Title
-		= form.text_field :Title
+		= form.label :title
+		= form.text_field :title
 	%div
-		= form.label :Content
-		= form.text_field :Content
+		= form.label :content
+		= form.text_field :content
 		= form.submit "Create"

@@ -44,6 +44,10 @@ Then("(I/he )should be redirected to index page") do
   expect(current_path).to eq root_path
 end
 
+Then("he should be on the letter of reccomendation page") do
+  expect(current_path).to eq admin_letters_path
+end
+
 Then("he should be on the admin page") do
   expect(current_path).to eq admin_root_path
 end
@@ -75,9 +79,6 @@ end
 Then("he should see the employers information") do
   expect(page).to have_content "We strive to train junior developers who will seamlessly fit into a workplace, ready to hit the ground running and dive into real projects. We train not just competent coders, with a wide range of skills, but teammates, problem-solvers and leaders."
 end
-
-
-
 
 Then("he should see {string} in the {string}") do |name, type|
   of_type = type.split.first.downcase

@@ -17,5 +17,6 @@ Feature: Coach can create a Letter of Reccomendation
         And fills in "Title" with "New letter of recommendation"
         And fills in "Content" with "Lorem Ipsum"
         And he clicks on "Create"
-        Then he should be on the admin page
+        # Then stop
+        Then he should be on the letter of reccomendation page
         And he should see "A new Letter of reccomendation has been created"
