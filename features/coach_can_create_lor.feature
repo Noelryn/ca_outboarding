@@ -1,5 +1,5 @@
 @javascript
-Feature: Coach can create a Letter of Reccomendation
+Feature: Coach can create a Letter of Recomendation
 
     Background:
         Given the following users exists
@@ -18,5 +18,5 @@ Feature: Coach can create a Letter of Reccomendation
         And fills in "Content" with "Lorem Ipsum"
         And he clicks on "Create"
         # Then stop
-        Then he should be on the letter of reccomendation page
-        And he should see "A new Letter of reccomendation has been created"
+        Then he should be on the letter of recomendation page
+        And he should see "A new Letter of recomendation has been created"

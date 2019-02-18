@@ -44,7 +44,7 @@ Then("(I/he )should be redirected to index page") do
   expect(current_path).to eq root_path
 end
 
-Then("he should be on the letter of reccomendation page") do
+Then("he should be on the letter of recomendation page") do
   expect(current_path).to eq admin_letters_path
 end
 

@@ -18,8 +18,5 @@ class Admin::LettersController < ApplicationController
     end
   end
 
-  # def show 
-  #   @letter = Letter.find(params[:user_id])
-  # end
 
 end

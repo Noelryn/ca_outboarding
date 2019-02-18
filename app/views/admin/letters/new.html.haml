@@ -1,7 +1,7 @@
 -# %h1 Write A letter of recommendation
 -# %p Find me in app/views/admin/letters/new.html.haml
 
-= form_with scope: :letter, url:  new_admin_letter_path, local: true do |form|
+= form_with scope: :letter, url: admin_letters_path, local: true do |form|
 	%div
 		= form.label :title
 		= form.text_field :title

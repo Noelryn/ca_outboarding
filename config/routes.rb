@@ -3,7 +3,6 @@
 Rails.application.routes.draw do
   namespace :admin do
     resources :users, :letters, only: %i[index new create]
-    # resources :letters
     
 		root controller: :users, action: :index
 	end
