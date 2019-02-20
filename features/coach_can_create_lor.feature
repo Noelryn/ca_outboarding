@@ -19,4 +19,5 @@ Feature: Coach can create a Letter of Recomendation
         And he clicks on "Create"
         # Then stop
         Then he should be on the letter of recomendation page
+        # Then stop 
         And he should see "A new letter of recomendation has been created"
